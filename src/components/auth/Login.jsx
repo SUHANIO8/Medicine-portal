@@ -28,7 +28,7 @@ export default function Login({ setIsAuthenticated }) {
         setIsAuthenticated(true);
         localStorage.setItem('isAuthenticated', 'true');
         // Force reload to ensure all components get the updated auth state
-        window.location.href = '/dashboard';
+        window.location.href = '/src/components/dashboard';
       } else {
         setLoginError('Invalid email or password');
       }
