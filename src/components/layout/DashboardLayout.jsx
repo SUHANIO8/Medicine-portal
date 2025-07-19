@@ -25,7 +25,7 @@ export default function DashboardLayout({ isAuthenticated }) {
               Home
             </a>
             <a
-              href="#"
+              href="/dashboard"
               className="text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md bg-gray-900"
             >
               Dashboard
