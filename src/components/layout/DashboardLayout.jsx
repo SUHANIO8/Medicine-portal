@@ -1,6 +1,7 @@
 import { Outlet, Navigate } from 'react-router-dom';
 import { useState } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import Footer from './Footer';
 
 export default function DashboardLayout({ isAuthenticated }) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -10,7 +11,7 @@ export default function DashboardLayout({ isAuthenticated }) {
   }
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-teal-600">
       {/* Mobile sidebar */}
       <div className={`${sidebarOpen ? 'translate-x-0' : '-translate-x-full'} fixed inset-y-0 z-50 flex w-64 transform transition duration-300 ease-in-out lg:translate-x-0`}>
         <div className="flex w-64 flex-col bg-gray-800">
@@ -65,6 +66,8 @@ export default function DashboardLayout({ isAuthenticated }) {
           <Outlet />
         </div>
       </main>
+
+      <Footer />
     </div>
   );
 }

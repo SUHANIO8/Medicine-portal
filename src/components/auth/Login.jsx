@@ -39,7 +39,7 @@ export default function Login({ setIsAuthenticated }) {
   };
 
   return (
-    <form className="space-y-6 bg-white p-8 rounded-lg shadow-md w-full max-w-md" onSubmit={handleSubmit(onSubmit)}>
+<form className="space-y-6 bg-white p-8 rounded-lg shadow-md w-full max-w-md" onSubmit={handleSubmit(onSubmit)}>
       <div className="flex justify-center mb-4">
         <BeakerIcon className="h-10 w-10 text-teal-500" aria-hidden="true" />
       </div>
