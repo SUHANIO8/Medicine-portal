@@ -10,7 +10,7 @@ export default defineConfig({
       plugins: [tailwindcss()],
     },
   },
-  base: './',
+  base: '/',
   server: {
     historyApiFallback: true,
     port: 3000
